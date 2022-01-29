@@ -1,0 +1,51 @@
+.main{
+
+    &-section{
+        padding-top: 3.375rem;
+        background-color: #ffffff;
+    }
+
+    &-p2{
+        margin-top: 3.375rem;
+    }
+
+    &-p3{
+        margin-top: 1.5rem;
+    }
+
+    &-vision{
+        margin-top: 3rem;
+        p{
+            margin-top: 1rem;
+        }
+    }
+
+    &-mission{
+        margin-top: 3rem;
+        p{
+            margin-top: 1rem;
+        }
+    }
+
+    &-objectives{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+      
+
+        .objective-list{
+            list-style-type: none;
+            padding: 0;
+          
+            & li:before{
+                content: '\2022';
+                color:  #35B44B;
+                width: 1rem;
+                font-size: 1.4rem;
+                display: inline-block;
+                margin-right: 1rem;
+
+            }
+           
+        }
+    }
+}

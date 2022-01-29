@@ -1,0 +1,54 @@
+.footer{
+    &-section{
+        padding: 4.625rem 0;
+        background-color: #ffffff;
+    }
+
+    &-links{
+        padding: 0;
+        list-style-type: none;
+
+        li{
+            margin-bottom: 1.5rem;
+        }
+     
+    }
+
+    &-bottom{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-icon{
+        margin-right: 1.125rem;
+        @include rfs(15px);
+    }
+
+   
+    @include media-breakpoint-down(lg){
+        &-logo{
+        
+            display: none;
+        
+         }
+
+         &-section{
+             padding: 2.3rem 0;
+         }
+    }
+
+    @include media-breakpoint-down(md){
+        &-bottom{
+            margin-top: 1rem;
+            display: block;
+        }
+
+        &-terms{
+            margin-top:1rem;
+        }
+    }
+
+    
+  
+}

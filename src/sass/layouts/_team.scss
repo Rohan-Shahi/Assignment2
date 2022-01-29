@@ -1,0 +1,61 @@
+.team{
+
+    &-section{
+        margin-top: 3.375rem;
+        background-color: $light-gray;
+    }
+
+    &-title{
+        margin: 2.125rem 0 2.5rem 0;
+    }
+
+    // &-members-container{
+    //     display: flex;
+        
+    // }
+    
+
+    &-member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1.5rem;
+
+        h3{
+            @include rfs(16px);
+            margin-top: 1rem;
+            
+        }
+
+        p{
+            @include rfs(12px);
+            margin-top: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .member-role{
+            @include rfs(14px);
+            margin-top: 0.25rem;
+        }
+      
+    }
+
+    &-management{
+        margin-top: 3.125rem;
+        &-one{
+            margin-bottom: 2.75rem;
+        }
+
+        &-two{
+            padding-bottom: 5rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        &-section{
+            display: none;
+        }
+    }
+
+}
+

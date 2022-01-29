@@ -1,0 +1,36 @@
+.table{
+    margin-top: 1.5rem;
+    color:  #4A4B57;
+    border: 1px solid #F5F8FF;
+    &-section{
+        background-color: #ffffff;
+        padding: 4rem 0;
+    }
+
+    & tbody tr:nth-child(even){
+        background-color:  #F5F8FF;
+    }
+
+    
+
+    &-row1{
+        background-color: #35B44B;
+        color: #ffffff;
+        
+    }
+
+    tr:first-child td:first-child { 
+        border-top-left-radius: 0.5rem;
+     }
+
+    tr:first-child td:last-child { 
+        border-top-right-radius: 0.5rem; 
+    } 
+    tr:last-child td:first-child { 
+        border-bottom-left-radius: 0.5rem;
+     }
+    tr:last-child td:last-child { 
+        border-bottom-right-radius: 0.5rem; 
+    }
+
+}

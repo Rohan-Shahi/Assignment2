@@ -1,0 +1,217 @@
+@mixin h1 {
+  @include rfs(2.488rem); //39.81px
+
+}
+@mixin h2 {
+  @include rfs(2.074rem); //33.18px
+
+}
+@mixin h3 {
+  @include rfs(1.728rem); //27.65px
+
+}
+@mixin h4 {
+  @include rfs(1.44rem); //23.04px
+
+}
+@mixin h5 {
+  @include rfs(1.2rem); //19.20px
+
+}
+@mixin h6 {
+  @include rfs(1rem); //39.81px
+
+}
+@mixin des {
+  @include rfs(0.833rem); //13.33px 
+
+}
+@mixin small {
+  @include rfs(0.8rem);  //11.11px
+}
+
+h1,.h1{
+  @include h1;
+}
+h2,.h2{
+  @include h2;
+}
+h3,.h3{
+  @include h3;
+}
+h4,.h4{
+  @include h4;
+}
+h5,.h5{
+  @include h5;
+}
+h6,.h6{
+  @include h6;
+}
+p,.des{
+  @include des;
+}
+small,.small{
+  @include small;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+.font-bold{
+  font-weight: 900;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;
+}
+
+
+p{
+  @include small;
+  color: $secondary;
+}
+
+
+.heading{
+  color: $orange;
+  font-weight: 700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Roboto&display=swap');
+
+body{
+
+    p{
+        color: #5A5B6A;
+        @include rfs(16px);
+        line-height: 1.8125rem;
+        font-family: 'Inter', sans-serif;
+    }
+
+    a{
+
+        font-family: 'DM Sans', sans-serif;
+        @include rfs(16px);
+        color: #4A4B57;
+
+        &:hover{
+            color: $main-color;
+        }
+
+    }
+
+    .about{
+        &-title{
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            @include rfs(34px);
+            color: #FFFFFF;
+            margin-bottom: 1.5rem;
+        }
+
+        &-description{
+            @include rfs(18px);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+
+    .main{
+
+      &-title{
+        color:  $title-color;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: bold;
+        @include rfs(24px);
+
+
+      }
+
+      &-objectives li{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        @include rfs(16px);
+        color: #5A5B6A;
+        line-height: 1.8125rem;
+        margin-top: 1rem;
+
+      }
+    }
+
+    .team{
+      &-header{
+        font-family: 'DM Sans', sans-serif;
+        color: $title-color;
+        font-weight: bold;
+        @include rfs(32px);
+
+        }
+
+       &-title{
+        font-family: 'DM Sans', sans-serif;
+        color: $title-color;
+        font-weight: 500;
+        @include rfs(24px);
+       } 
+    }
+
+    .footer{
+      &-links{
+        a{
+          font-family: 'DM Sans', sans-serif;
+          color: #4A4B57;
+          @include rfs(16px);
+        }
+      }
+
+      &-copyright, &-terms{
+        @include rfs(14px);
+        font-family: 'DM Sans', sans-serif;
+          color: #4A4B57;
+      }
+    }
+
+    .product{
+      &-title{
+        h3{
+          color: #5A5B6A;
+          font-family: 'Inter', sans-serif;
+          @include rfs(32px);
+        }
+        h1{
+          color: $title-color;
+          font-family: 'DM Sans', sans-serif;
+          @include rfs(48px);
+          font-weight: bold;
+        }
+      }
+
+      &-description{
+        p{
+          @include rfs(22px);
+          font-family: 'Inter', sans-serif;
+          color: #4A4B57;
+
+        }
+      }
+    }
+    .table{
+      td{
+        font-family: 'Inter', sans-serif;
+        @include rfs(16px);
+        padding: 1rem 0;
+      }
+
+      &-row1{
+        td{
+          font-family: 'Inter', sans-serif;
+          @include rfs(18px);
+          padding: 1rem 0;
+          font-weight: 500;
+        }
+       
+      }
+    }
+}
